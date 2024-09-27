@@ -14,7 +14,7 @@ Bu proje, Ruby on Rails ve GraphQL kullanılarak geliştirilmiş bir e-ticaret a
 
 1. Repo'yu klonlayın:
 ```shell
-$ git clone https://github.com/ysn1453/e-commerce-api.git && cd e-commerce-api
+$ git clone https://github.com/ysn1453/ecommerce_api.git && cd ecommerce_api
 ```
 
 2. Gerekli gem'leri yükleyin:
