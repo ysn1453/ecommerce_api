@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: yasin test
+  email: ysntest@localhost.com
+  phone: 5123456789
+
+two:
+  name: yasin test 2
+  email: ysn2test@localhost.com
+  phone: 5223456789

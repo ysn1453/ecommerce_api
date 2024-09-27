@@ -1,0 +1,30 @@
+<h1>Siparişiniz Oluşturuldu.</h1>
+
+<p>Sayın <%= @customer.name %>,</p>
+
+<h2>Sipariş Numaranız: #<%= @order.id %></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ürün Adı</th>
+      <th>Adet Miktarı</th>
+      <th>Birim Fiyat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @order.order_items.includes(:product).each do |item| %>
+      <tr>
+        <td><%= item.product.name %></td>
+        <td><%= item.quantity %></td>
+        <td><%= number_to_currency(item.price) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan="2">Toplam Tutar:</th>
+      <td><%= number_to_currency(@order.total_price) %></td>
+    </tr>
+  </tfoot>
+</table>
