@@ -1,24 +1,50 @@
-# README
+# E-Commerce API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bu proje, Ruby on Rails ve GraphQL kullanılarak geliştirilmiş bir e-ticaret api uygulamasıdır.
 
-Things you may want to cover:
+## Özellikler
 
-* Ruby version
+- Müşteri oluşturma
+- Ürün yönetimi
+- Sepet işlemleri
+- Sipariş oluşturma
+- Stok kontrolü
 
-* System dependencies
+## Kurulum
 
-* Configuration
+1. Repo'yu klonlayın:
+```shell
+$ git clone https://github.com/ysn1453/e-commerce-api.git && cd e-commerce-api
+```
 
-* Database creation
+2. Gerekli gem'leri yükleyin:
+```shell
+$ bundle install
+```
 
-* Database initialization
+3. Veritabanını oluşturun ve migrate edin:
+```shell
+$ rails db:create db:migrate
+```
 
-* How to run the test suite
+4. (Opsiyonel) Örnek verileri yükleyin:
+```shell
+$ rails db:seed
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+5. Sunucuyu başlatın:
+```shell
+$ rails server
+```
 
-* Deployment instructions
+## API Kullanımı
 
-* ...
+API, GraphQL endpoint'i üzerinden erişilebilir: <http://localhost:3000/graphql>
+
+### Testler
+
+Testleri çalıştırmak için:
+
+```shell
+$ rails test
+```
